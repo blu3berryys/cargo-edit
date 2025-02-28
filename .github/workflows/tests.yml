@@ -43,7 +43,7 @@ jobs:
         uses: dtolnay/rust-toolchain@nightly
 
       - name: Cache Rust dependencies
-      - uses: Swatinem/rust-cache@v2
+        uses: Swatinem/rust-cache@v2
 
       - name: Build
         run: cargo test --no-run
@@ -80,7 +80,7 @@ jobs:
           components: rustfmt
 
       - name: Cache Rust dependencies
-      - uses: Swatinem/rust-cache@v2
+        uses: Swatinem/rust-cache@v2
 
       - name: Check formatting
         run: cargo fmt --all -- --check
